@@ -16,6 +16,8 @@ use App\Http\Controllers\TeamController;
 |
 */
 
+Route::get('test', [HomeController::class, 'test']);
+
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/tournaments', [TournamentController::class, 'index'])->name('tournaments.index');
